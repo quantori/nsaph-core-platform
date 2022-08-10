@@ -63,7 +63,7 @@ Doc directory contains documentation.
 Resource directory contains resources that must be loaded in 
 the data platform for its normal functioning. For example,
 they contain mappings between US states, counties, fips and zip codes.
-See details in [Resources](#Resources) section.
+See details in [Resources](#resources) section.
 
 Src directory contains software source code. 
 See details in [Software Sources](#software-sources) section.
@@ -217,7 +217,7 @@ Beside data model files, there are YAML files for:
   into corresponding pipeline repositories. 
 * Sample user requests for future downstream pipelines
   that create user workspaces from the database. File 
-  [example_request.yml](src/yml/example_request.yaml) is used by
+  [example_request.yml](/common/core-platform/src/yml/example_request.yaml) is used by
   [sample request handler](src/python/nsaph/requests/hdf5_export.py)
 
 ### Resources
