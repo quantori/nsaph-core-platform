@@ -1,0 +1,18 @@
+name: Push changes to nspah-platform-docs
+on:
+  push:
+    branches:
+      - feature/automatic_documentation
+jobs:
+  build:
+    name: Run Web App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Workflow and Wait
+        uses: convictional/trigger-workflow-and-wait@v1.6.3
+        with:
+          owner: quantori
+          ref: feature/automatic_documentation
+          repo: nsaph-platform-docs
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          workflow_file_name: deploy.yml
