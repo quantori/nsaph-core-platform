@@ -1,11 +1,11 @@
-name: Push changes to nspah-platform-docs
+name: Trigger nsaph-platform-docs
 on:
   push:
     branches:
       - feature/automatic_documentation
+
 jobs:
   build:
-    name: Run Web App
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Workflow and Wait
